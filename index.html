@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/book-icon.png" type="image/x-icon">
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .custom-shadow {
+            box-shadow: 1px 1px 8px #d1d1d1;
+            border-radius: 8px;
+        }
+
+        .custom-btn {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 3px 8px;
+        }
+
+        .custom-bg {
+            background-color: #fffafa;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="container m-3 mx-auto p-4 custom-shadow custom-bg">
+            <h2 class="text-center text-success fw-bold mt-2 mb-4">Find your favorite books in our Book Archive</h2>
+            <!-- Search Option -->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-filed" type="text" class="form-control" placeholder="Search Your Books Here">
+                <button id="search-button" class="btn btn-primary" type="button">Search</button>
+            </div>
+
+            <!-- Search Result Count Display -->
+            <div class="m-0 fst-italic text-secondary">
+                <p id="shown-result">Shown 5 results out of 10</p>
+            </div>
+
+            <!-- Error 404 Message Display -->
+            <div id="error-404-message" style="display: none;" class="text-center mb-5">
+                <img src="img/error.PNG" class="img-fluid" width="200px" alt="Error Image">
+                <h2 class="fw-bold m-0 text-danger">404 Not Found</h2>
+                <h5>Please Search By Valid Book Names</h5>
+            </div>
+
+            <!-- Empty Search Message Display -->
+            <div id="empty-message" style="display: none;" class="text-center mb-5">
+                <h3 class="fw-bold m-0 text-danger">Search Filed Can't Be Empty. Please Search By Valid Book Name</h3>
+            </div>
+
+            <!-- Display Books Div -->
+            <div id="books-container" class="row g-3">
+                <!-- Dynamic Design Code Start -->
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="p-2  bg-white text-center h-100 custom-shadow">
+                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
+                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
+                        <h6 class="m-0">Author: Rahman Riad</h6>
+                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
+                        <button onclick="viewMoreDetails()" class="custom-btn">View More</button>
+                    </div>
+                </div>
+                <!-- Dynamic Design Code End -->
+
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="p-2  bg-white text-center h-100 custom-shadow">
+                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
+                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
+                        <h6 class="m-0">Author: Rahman Riad</h6>
+                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
+                        <button class="custom-btn">View More</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="p-2  bg-white text-center h-100 custom-shadow">
+                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
+                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
+                        <h6 class="m-0">Author: Rahman Riad</h6>
+                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
+                        <button class="custom-btn">View More</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="p-2  bg-white text-center h-100 custom-shadow">
+                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
+                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
+                        <h6 class="m-0">Author: Rahman Riad</h6>
+                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
+                        <button class="custom-btn">View More</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="text-center text-secondary">
+        <p>Copyright © All Rights Reserved 2021 Book Archive</p>
+    </footer>
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -34,16 +34,31 @@
 <body>
     <main>
         <section class="container m-3 mx-auto p-4 custom-shadow custom-bg">
-            <h2 class="text-center text-success fw-bold mt-2 mb-4">Find your favorite books in our Book Archive</h2>
+            <h2 class="text-center text-secondary fw-bold mt-2 mb-4">Find your favorite books in our Book Archive</h2>
+
             <!-- Search Option -->
             <div class="input-group mb-3 w-50 mx-auto">
                 <input id="search-filed" type="text" class="form-control" placeholder="Search Your Books Here">
-                <button id="search-button" class="btn btn-primary" type="button">Search</button>
+                <button id="search-button" class="btn btn-secondary" type="button">Search</button>
             </div>
 
             <!-- Search Result Count Display -->
             <div class="m-0 fst-italic text-secondary">
-                <p id="shown-result">Showing 5 Result out of 10</p>
+                <p id="shown-result">Search Result: Not Yet Search</p>
+            </div>
+
+            <!-- Spinner Design -->
+            <div id="spinner-id" class="text-center" style="display: none;">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border mb-1" role="status"></div>
+                </div>
+                <p class="fw-bold">Loading...</p>
+            </div>
+
+            <!-- Default Home Page Design -->
+            <div id="default-design" class="text-center">
+                <img src="img/theme.png" class="img-fluid" width="150px" alt="Home Page Theme Photo">
+                <h3 class="fw-bold mb-5 text-secondary">A room without books is like <br> a body without a soul...</h3>
             </div>
 
             <!-- Error 404 Message Display -->
@@ -59,24 +74,14 @@
             </div>
 
             <!-- Display Books Div -->
-            <div id="books-container" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
-                <!-- Dynamic Design Code Start -->
-                <!-- <div class="col h-100">
-                    <div class="p-2  bg-white text-center custom-shadow">
-                        <img src="img/cover-small.jpg" class="rounded-top" width="100%" height="300px" alt="Book Cover">
-                        <h6 class="m-0 fw-bold">JavaScript Book</h6>
-                        <p class="m-0">Author: Rahman Riad</p>
-                        <p class="m-0 fst-italic"> First Published In: 2021 </p>
-                    </div>
-                </div> -->
-                <!-- Dynamic Design Code End -->
-
-            </div>
+            <div id="books-container" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3"></div>
         </section>
     </main>
+
     <footer class=" text-center text-secondary">
         <p>Copyright © All Rights Reserved 2021 Book Archive</p>
     </footer>
+
     <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

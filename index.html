@@ -43,7 +43,7 @@
 
             <!-- Search Result Count Display -->
             <div class="m-0 fst-italic text-secondary">
-                <p id="shown-result">Shown 5 results out of 10</p>
+                <p id="shown-result">Showing 5 Result out of 10</p>
             </div>
 
             <!-- Error 404 Message Display -->
@@ -59,57 +59,29 @@
             </div>
 
             <!-- Display Books Div -->
-            <div id="books-container" class="row g-3">
+            <div id="books-container" class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
                 <!-- Dynamic Design Code Start -->
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="p-2  bg-white text-center h-100 custom-shadow">
-                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
-                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
-                        <h6 class="m-0">Author: Rahman Riad</h6>
-                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
-                        <button onclick="viewMoreDetails()" class="custom-btn">View More</button>
+                <!-- <div class="col h-100">
+                    <div class="p-2  bg-white text-center custom-shadow">
+                        <img src="img/cover-small.jpg" class="rounded-top" width="100%" height="300px" alt="Book Cover">
+                        <h6 class="m-0 fw-bold">JavaScript Book</h6>
+                        <p class="m-0">Author: Rahman Riad</p>
+                        <p class="m-0 fst-italic"> First Published In: 2021 </p>
                     </div>
-                </div>
+                </div> -->
                 <!-- Dynamic Design Code End -->
-
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="p-2  bg-white text-center h-100 custom-shadow">
-                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
-                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
-                        <h6 class="m-0">Author: Rahman Riad</h6>
-                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
-                        <button class="custom-btn">View More</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="p-2  bg-white text-center h-100 custom-shadow">
-                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
-                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
-                        <h6 class="m-0">Author: Rahman Riad</h6>
-                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
-                        <button class="custom-btn">View More</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-12">
-                    <div class="p-2  bg-white text-center h-100 custom-shadow">
-                        <img src="img/cover-small.jpg" class="img-fluid rounded-top" width="100%" alt="Book Cover">
-                        <h5 class="m-0 fw-bold">JavaScript Book</h5>
-                        <h6 class="m-0">Author: Rahman Riad</h6>
-                        <p class="m-0 fst-italic" style="font-size: 16px;"> First Published: 02 september 2021 </p>
-                        <button class="custom-btn">View More</button>
-                    </div>
-                </div>
 
             </div>
         </section>
     </main>
-    <footer class="text-center text-secondary">
+    <footer class=" text-center text-secondary">
         <p>Copyright © All Rights Reserved 2021 Book Archive</p>
     </footer>
     <!-- BootStrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Custom JS -->
     <script src="app.js"></script>
 </body>
 

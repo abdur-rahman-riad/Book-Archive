@@ -47,7 +47,8 @@ const displayBooks = bookDetails => {
             <div class="p-2  bg-white text-center h-100 custom-shadow">
                 <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="rounded-top" width="100%" height="300px" alt="${book.title} Cover Photo">
                 <h6 class="m-0 fw-bold">${book.title}</h6>
-                <p class="m-0">${book.author_name[0]}</p>
+                <p class="m-0">Author: ${book.author_name[0]}</p>
+                <p class="m-0">Publisher: ${book.publisher[0]}</p>
                 <p class="m-0 fst-italic"> First Published In: ${book.first_publish_year}</p>
             </div>
         </div>

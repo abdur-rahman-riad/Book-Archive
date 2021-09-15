@@ -2,6 +2,16 @@
 const searchFiled = document.getElementById('search-filed');
 const searchButton = document.getElementById('search-button');
 
+// Search by Enter Key
+searchFiled.addEventListener("keypress", function (event) {
+    if (event.key == "Enter") {
+        searchButton.click();
+    }
+    // if (event.keyCode == 13) {
+    //     searchButton.click();
+    // }
+});
+
 // Fetching Data When Search Button Clicked.
 searchButton.addEventListener('click', function () {
     toggleSpinner('block');
@@ -72,4 +82,3 @@ const emptyErrorMessage = emptyError => {
 const error404Message = error404 => {
     document.getElementById('error-404-message').style.display = error404;
 }
-
